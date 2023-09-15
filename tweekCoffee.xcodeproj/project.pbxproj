@@ -28,7 +28,6 @@
 		CC7FB59D2AB312D200F78B53 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7FB59C2AB312D200F78B53 /* Badge.swift */; };
 		CC7FB59F2AB31D8400F78B53 /* CoffeeMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7FB59E2AB31D8400F78B53 /* CoffeeMachine.swift */; };
 		CC7FB5A12AB31FBE00F78B53 /* CoffeeMachineCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7FB5A02AB31FBE00F78B53 /* CoffeeMachineCard.swift */; };
-		CC7FB5A32AB3ABAE00F78B53 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7FB5A22AB3ABAE00F78B53 /* CustomColors.swift */; };
 		CC7FB5A52AB439EF00F78B53 /* CoffeeRatioCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7FB5A42AB439EF00F78B53 /* CoffeeRatioCalculatorView.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,7 +54,6 @@
 		CC7FB59C2AB312D200F78B53 /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
 		CC7FB59E2AB31D8400F78B53 /* CoffeeMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeMachine.swift; sourceTree = "<group>"; };
 		CC7FB5A02AB31FBE00F78B53 /* CoffeeMachineCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeMachineCard.swift; sourceTree = "<group>"; };
-		CC7FB5A22AB3ABAE00F78B53 /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
 		CC7FB5A42AB439EF00F78B53 /* CoffeeRatioCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeRatioCalculatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,7 +109,6 @@
 			children = (
 				401E24392AB06C9C00EED717 /* CoffeeRecipe.swift */,
 				CC7FB59E2AB31D8400F78B53 /* CoffeeMachine.swift */,
-				CC7FB5A22AB3ABAE00F78B53 /* CustomColors.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -232,7 +229,6 @@
 				40CEADC52A97984900C8E31B /* ContentView.swift in Sources */,
 				401E243E2AB071D600EED717 /* CoffeeRecipeEditor.swift in Sources */,
 				CC7FB59F2AB31D8400F78B53 /* CoffeeMachine.swift in Sources */,
-				CC7FB5A32AB3ABAE00F78B53 /* CustomColors.swift in Sources */,
 				40CEADC32A97984900C8E31B /* tweekCoffeeApp.swift in Sources */,
 				40CEADD52A979D2200C8E31B /* HomeView.swift in Sources */,
 				CC7FB5932AB2F9E600F78B53 /* CategoriesView.swift in Sources */,
