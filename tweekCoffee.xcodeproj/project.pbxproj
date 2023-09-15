@@ -7,18 +7,56 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		401E243A2AB06C9C00EED717 /* CoffeeRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401E24392AB06C9C00EED717 /* CoffeeRecipe.swift */; };
+		401E243C2AB06CEB00EED717 /* CoffeeRecipeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401E243B2AB06CEB00EED717 /* CoffeeRecipeDetail.swift */; };
+		401E243E2AB071D600EED717 /* CoffeeRecipeEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401E243D2AB071D600EED717 /* CoffeeRecipeEditor.swift */; };
+		401E24422AB0918D00EED717 /* CoffeeMachineDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401E24412AB0918D00EED717 /* CoffeeMachineDetailView.swift */; };
+		401E24442AB092C400EED717 /* CoffeeRecipeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401E24432AB092C400EED717 /* CoffeeRecipeList.swift */; };
+		401E24462AB0930300EED717 /* CoffeeMachineList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401E24452AB0930300EED717 /* CoffeeMachineList.swift */; };
 		40CEADC32A97984900C8E31B /* tweekCoffeeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CEADC22A97984900C8E31B /* tweekCoffeeApp.swift */; };
 		40CEADC52A97984900C8E31B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CEADC42A97984900C8E31B /* ContentView.swift */; };
 		40CEADC72A97984A00C8E31B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40CEADC62A97984A00C8E31B /* Assets.xcassets */; };
 		40CEADCA2A97984A00C8E31B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40CEADC92A97984A00C8E31B /* Preview Assets.xcassets */; };
+		40CEADD52A979D2200C8E31B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CEADD42A979D2200C8E31B /* HomeView.swift */; };
+		CC7FB58D2AB2F5E800F78B53 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7FB58C2AB2F5E800F78B53 /* SettingsView.swift */; };
+		CC7FB58F2AB2F61B00F78B53 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7FB58E2AB2F61B00F78B53 /* TabBar.swift */; };
+		CC7FB5912AB2F99200F78B53 /* NewRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7FB5902AB2F99200F78B53 /* NewRecipeView.swift */; };
+		CC7FB5932AB2F9E600F78B53 /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7FB5922AB2F9E600F78B53 /* CategoriesView.swift */; };
+		CC7FB5962AB301C000F78B53 /* RecipeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7FB5952AB301C000F78B53 /* RecipeCard.swift */; };
+		CC7FB5982AB3074000F78B53 /* RecipeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7FB5972AB3074000F78B53 /* RecipeList.swift */; };
+		CC7FB59B2AB3096100F78B53 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7FB59A2AB3096100F78B53 /* RecipeView.swift */; };
+		CC7FB59D2AB312D200F78B53 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7FB59C2AB312D200F78B53 /* Badge.swift */; };
+		CC7FB59F2AB31D8400F78B53 /* CoffeeMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7FB59E2AB31D8400F78B53 /* CoffeeMachine.swift */; };
+		CC7FB5A12AB31FBE00F78B53 /* CoffeeMachineCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7FB5A02AB31FBE00F78B53 /* CoffeeMachineCard.swift */; };
+		CC7FB5A32AB3ABAE00F78B53 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7FB5A22AB3ABAE00F78B53 /* CustomColors.swift */; };
+		CC7FB5A52AB439EF00F78B53 /* CoffeeRatioCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7FB5A42AB439EF00F78B53 /* CoffeeRatioCalculatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		401E24392AB06C9C00EED717 /* CoffeeRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeRecipe.swift; sourceTree = "<group>"; };
+		401E243B2AB06CEB00EED717 /* CoffeeRecipeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeRecipeDetail.swift; sourceTree = "<group>"; };
+		401E243D2AB071D600EED717 /* CoffeeRecipeEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeRecipeEditor.swift; sourceTree = "<group>"; };
+		401E24412AB0918D00EED717 /* CoffeeMachineDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeMachineDetailView.swift; sourceTree = "<group>"; };
+		401E24432AB092C400EED717 /* CoffeeRecipeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeRecipeList.swift; sourceTree = "<group>"; };
+		401E24452AB0930300EED717 /* CoffeeMachineList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeMachineList.swift; sourceTree = "<group>"; };
 		40CEADBF2A97984900C8E31B /* tweekCoffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tweekCoffee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40CEADC22A97984900C8E31B /* tweekCoffeeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tweekCoffeeApp.swift; sourceTree = "<group>"; };
 		40CEADC42A97984900C8E31B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		40CEADC62A97984A00C8E31B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40CEADC92A97984A00C8E31B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		40CEADD42A979D2200C8E31B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		CC7FB58C2AB2F5E800F78B53 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		CC7FB58E2AB2F61B00F78B53 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		CC7FB5902AB2F99200F78B53 /* NewRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRecipeView.swift; sourceTree = "<group>"; };
+		CC7FB5922AB2F9E600F78B53 /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
+		CC7FB5952AB301C000F78B53 /* RecipeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCard.swift; sourceTree = "<group>"; };
+		CC7FB5972AB3074000F78B53 /* RecipeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeList.swift; sourceTree = "<group>"; };
+		CC7FB59A2AB3096100F78B53 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
+		CC7FB59C2AB312D200F78B53 /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
+		CC7FB59E2AB31D8400F78B53 /* CoffeeMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeMachine.swift; sourceTree = "<group>"; };
+		CC7FB5A02AB31FBE00F78B53 /* CoffeeMachineCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeMachineCard.swift; sourceTree = "<group>"; };
+		CC7FB5A22AB3ABAE00F78B53 /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
+		CC7FB5A42AB439EF00F78B53 /* CoffeeRatioCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeRatioCalculatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +89,9 @@
 		40CEADC12A97984900C8E31B /* tweekCoffee */ = {
 			isa = PBXGroup;
 			children = (
+				CC7FB58A2AB2F2CF00F78B53 /* Models */,
 				40CEADC22A97984900C8E31B /* tweekCoffeeApp.swift */,
-				40CEADC42A97984900C8E31B /* ContentView.swift */,
+				CC7FB58B2AB2F42100F78B53 /* Views */,
 				40CEADC62A97984A00C8E31B /* Assets.xcassets */,
 				40CEADC82A97984A00C8E31B /* Preview Content */,
 			);
@@ -65,6 +104,56 @@
 				40CEADC92A97984A00C8E31B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CC7FB58A2AB2F2CF00F78B53 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				401E24392AB06C9C00EED717 /* CoffeeRecipe.swift */,
+				CC7FB59E2AB31D8400F78B53 /* CoffeeMachine.swift */,
+				CC7FB5A22AB3ABAE00F78B53 /* CustomColors.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CC7FB58B2AB2F42100F78B53 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CC7FB5992AB3094000F78B53 /* Detail */,
+				CC7FB5942AB301A400F78B53 /* Components */,
+				40CEADC42A97984900C8E31B /* ContentView.swift */,
+				CC7FB58E2AB2F61B00F78B53 /* TabBar.swift */,
+				CC7FB5A42AB439EF00F78B53 /* CoffeeRatioCalculatorView.swift */,
+				CC7FB5922AB2F9E600F78B53 /* CategoriesView.swift */,
+				401E24432AB092C400EED717 /* CoffeeRecipeList.swift */,
+				401E243B2AB06CEB00EED717 /* CoffeeRecipeDetail.swift */,
+				40CEADD42A979D2200C8E31B /* HomeView.swift */,
+				401E243D2AB071D600EED717 /* CoffeeRecipeEditor.swift */,
+				CC7FB5902AB2F99200F78B53 /* NewRecipeView.swift */,
+				401E24412AB0918D00EED717 /* CoffeeMachineDetailView.swift */,
+				CC7FB58C2AB2F5E800F78B53 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CC7FB5942AB301A400F78B53 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CC7FB5952AB301C000F78B53 /* RecipeCard.swift */,
+				CC7FB5A02AB31FBE00F78B53 /* CoffeeMachineCard.swift */,
+				CC7FB5972AB3074000F78B53 /* RecipeList.swift */,
+				401E24452AB0930300EED717 /* CoffeeMachineList.swift */,
+				CC7FB59C2AB312D200F78B53 /* Badge.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		CC7FB5992AB3094000F78B53 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				CC7FB59A2AB3096100F78B53 /* RecipeView.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +226,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				401E24462AB0930300EED717 /* CoffeeMachineList.swift in Sources */,
+				CC7FB59D2AB312D200F78B53 /* Badge.swift in Sources */,
+				401E24422AB0918D00EED717 /* CoffeeMachineDetailView.swift in Sources */,
 				40CEADC52A97984900C8E31B /* ContentView.swift in Sources */,
+				401E243E2AB071D600EED717 /* CoffeeRecipeEditor.swift in Sources */,
+				CC7FB59F2AB31D8400F78B53 /* CoffeeMachine.swift in Sources */,
+				CC7FB5A32AB3ABAE00F78B53 /* CustomColors.swift in Sources */,
 				40CEADC32A97984900C8E31B /* tweekCoffeeApp.swift in Sources */,
+				40CEADD52A979D2200C8E31B /* HomeView.swift in Sources */,
+				CC7FB5932AB2F9E600F78B53 /* CategoriesView.swift in Sources */,
+				401E243C2AB06CEB00EED717 /* CoffeeRecipeDetail.swift in Sources */,
+				CC7FB58F2AB2F61B00F78B53 /* TabBar.swift in Sources */,
+				CC7FB5A52AB439EF00F78B53 /* CoffeeRatioCalculatorView.swift in Sources */,
+				CC7FB58D2AB2F5E800F78B53 /* SettingsView.swift in Sources */,
+				CC7FB5962AB301C000F78B53 /* RecipeCard.swift in Sources */,
+				CC7FB59B2AB3096100F78B53 /* RecipeView.swift in Sources */,
+				CC7FB5912AB2F99200F78B53 /* NewRecipeView.swift in Sources */,
+				401E243A2AB06C9C00EED717 /* CoffeeRecipe.swift in Sources */,
+				401E24442AB092C400EED717 /* CoffeeRecipeList.swift in Sources */,
+				CC7FB5A12AB31FBE00F78B53 /* CoffeeMachineCard.swift in Sources */,
+				CC7FB5982AB3074000F78B53 /* RecipeList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
