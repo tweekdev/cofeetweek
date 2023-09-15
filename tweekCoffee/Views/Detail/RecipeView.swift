@@ -127,6 +127,6 @@ struct RecipeView: View {
 
 struct RecipeView_Previews: PreviewProvider {
     static var previews: some View {
-        RecipeView(recipe: CoffeeRecipe.all[3])
+        RecipeView(recipe: CoffeeRecipe.all[0])
     }
 }

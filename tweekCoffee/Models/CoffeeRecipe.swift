@@ -111,7 +111,7 @@ extension CoffeeRecipe {
                 "Servez et dégustez!"
             ],
             coffeeQuantityInGrams: 30,
-            brewingTimeInSeconds: 430,
+            brewingTimeInSeconds: 280,
             coffeeExtractionMethod: CoffeeExtractionMethod.chemex.rawValue,
             coffeeMachineType: CoffeeMachineType.chemex.rawValue,
             degrees: 96,
