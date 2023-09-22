@@ -14,7 +14,6 @@ struct TabBar: View {
                 .tabItem{
                     Label("Home", systemImage: "house")
                 }
-            
             CategoriesView()
                 .tabItem {
                     Label("Guide", systemImage: "book.closed")
@@ -23,9 +22,7 @@ struct TabBar: View {
                 .tabItem {
                     Label("New", systemImage: "plus")
                 }
-            
-        
-            SettingsView()
+            CoffeeRatioCalculatorView()
                 .tabItem {
                     Label("More", systemImage: "ellipsis")
                 }

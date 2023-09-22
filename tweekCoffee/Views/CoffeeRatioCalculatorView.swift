@@ -56,7 +56,7 @@ struct CoffeeRatioCalculatorView: View {
                     .font(.headline)
                     .padding()
             } else {
-                Text("Ratio 1:\(ratio)")
+                Text("Ratio Café/Eau: 1:\(ratio)")
                     .font(.headline)
                     .padding()
             }

@@ -10,15 +10,15 @@ import SwiftUI
 struct RecipeList: View {
     var recipes: [CoffeeRecipe]
     var body: some View {
-            LazyHGrid(rows: [GridItem(.adaptive(minimum: 160), spacing: 15)], spacing: 15) {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 20) {
                 ForEach(recipes) { recipe in
                     NavigationLink(destination: RecipeView(recipe: recipe)) {
                         RecipeCard(recipe: recipe)
-
                     }
                 }
             }
-            .padding(.top).padding(.horizontal)
+        }
     }
 }
 

@@ -11,117 +11,177 @@ struct RecipeView: View {
     var recipe: CoffeeRecipe
     
     var body: some View {
-
-        ScrollView(.vertical, showsIndicators: false) {
-            VStack(alignment: .center,spacing: 0) {
-                VStack(alignment: .center,spacing: 0) {
-                    AsyncImage(url: URL(string: recipe.image)) { image in
-                        image
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .scaledToFill()
-                    } placeholder: {
-                        Image(systemName: "https://www.maxicoffee.com/fstrz/r/s/www.maxicoffee.com/blog/wp-content/uploads/2017/08/faire-du-cafe-filtre-comment.jpg?frz-v=126")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 100, height: 100, alignment: .center)
-                            .foregroundColor(.white.opacity(0.7))
-                            .frame(maxWidth: .infinity, maxHeight: .infinity)
-                        
-                    }
-                    .frame(width: 400, height: 400)
-                    .background(LinearGradient(gradient: Gradient(colors: [Color(.gray).opacity(0.3), Color(.gray)]), startPoint: .top, endPoint: .bottom))
-                    .cornerRadius(50)
+        ZStack {
+            Color("CoffeeWhite").edgesIgnoringSafeArea(.all)
+            
+            VStack(spacing: 0) {
+                AsyncImage(url: URL(string: recipe.image)) { image in
+                    image
+                        .resizable()
+                        .frame(height: UIScreen.main.bounds.height / 3)
+                    
+                    
+                } placeholder: {
+                    Image(systemName: "https://www.maxicoffee.com/fstrz/r/s/www.maxicoffee.com/blog/wp-content/uploads/2017/08/faire-du-cafe-filtre-comment.jpg?frz-v=126")
+                        .resizable()
+                        .frame(height: UIScreen.main.bounds.height / 3)
+                        .foregroundColor(.white.opacity(0.7))
                 }
+                .offset(y: 30)
+                .padding(.top, -30)
                 
-                Group {
-                    Text(recipe.name)
-                        .font(.system(.largeTitle, design: .rounded))
-                        .bold()
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(Color("CoffeeGreen"))
-                    // Instruction
-                    HStack(alignment: .center, spacing: 12) {
-                        
-                        HStack(alignment: .center, spacing: 2) {
-                            Image(systemName: "clock")
-                            Text("\(recipe.brewingTimeFormatted)")
-                        }
-                        HStack(alignment: .center, spacing: 2) {
-                            Image(systemName: "cup.and.saucer")
-                            Text("\(recipe.coffeeQuantityInGrams) g")
-                        }
-                        HStack(alignment: .center, spacing: 2) {
-                            Image(systemName: "drop.degreesign")
-                            Text("\(recipe.waterQuantityInGrams) g")
-                        }
-                    }.font(.footnote)
-                        .foregroundColor(Color("CoffeeOr"))
+                
+                ScrollView(.vertical, showsIndicators: false)  {
                     
-                    Text("Other Informations")
-                        .font(.title3).bold().foregroundColor(.brown)
-                    
-                    
-                    VStack(alignment: .leading, spacing: 10) {
+                    VStack {
+                        HStack {
+                            Text(recipe.name)
+                                .font(.title)
+                                .bold()
+                                .foregroundColor(.black)
+                            Spacer()
+                        }
+                        .padding(.top, 25)
+                        .padding(.bottom, 1)
                         
                         HStack {
-                            VStack {
-                                HStack(alignment: .center, spacing: 2) {
+                            
+                            HStack(alignment: .center, spacing: 15) {
+                                
+                                HStack(spacing: 15) {
+                                    Image(systemName: "clock")
+                                        .foregroundColor(.orange)
+                                    
+                                    Text(recipe.brewingTimeFormatted)
+                                    
+                                }
+                                .foregroundColor(.gray)
+                                
+                                HStack(spacing: 15) {
                                     Image(systemName: "drop.degreesign")
-                                    Text("\(recipe.coffeeWaterRatio)")
+                                        .foregroundColor(.orange)
+                                    
+                                    Text(String(recipe.coffeeWaterRatio))
+                                    
                                 }
-                                HStack(alignment: .center, spacing: 2) {
+                                .foregroundColor(.gray)
+                                
+                                HStack(spacing: 15) {
                                     Image(systemName: "drop.degreesign")
-                                    Text("\(recipe.coffeeExtractionMethod)")
+                                        .foregroundColor(.orange)
+                                    Text("\(recipe.waterQuantityInGrams) g")
+                                }
+                                .foregroundColor(.gray)
+                                
+                                HStack(spacing: 15) {
+                                    Image(systemName: "scalemass")
+                                        .foregroundColor(.orange)
+                                    Text("\(recipe.coffeeQuantityInGrams) g")
+                                }
+                                .foregroundColor(.gray)
+                                
+                            }
+                            
+                            
+                            
+                            Spacer()
+                            
+                            
+                        }
+                        
+                        HStack {
+                            Text("Ingredients")
+                                .font(.title2)
+                                .bold()
+                                .foregroundColor(.black)
+                            Spacer()
+                        }
+                        .padding(.top, 25)
+                        
+                        HStack {
+                            HStack(alignment: .center, spacing: 15) {
+                                VStack(alignment: .leading, spacing: 10) {
+                                    ForEach(recipe.ingredients, id: \.self) { ingredient in
+                                        HStack {
+                                            Image(systemName: "circle.fill")
+                                                .resizable()
+                                                .frame(width: 10, height: 10)
+                                                .foregroundColor(.orange)
+                                                .padding(.trailing, 5)
+                                            
+                                            Text(ingredient)
+                                        }
+                                        
+                                    }
                                 }
                             }
-                           
-                            VStack {
-                                HStack(alignment: .center, spacing: 2) {
-                                    Image(systemName: "machine")
-                                    Text("\(recipe.coffeeMachineType)")
+                            Spacer()
+                            
+                            
+                        }
+                        HStack {
+                            Text("Instructions")
+                                .font(.title2)
+                                .bold()
+                                .foregroundColor(.black)
+                            Spacer()
+                        }
+                        .padding(.top, 25)
+                        
+                        HStack {
+                            HStack(alignment: .center, spacing: 15) {
+                                VStack(alignment: .leading, spacing: 10) {
+                                    ForEach(recipe.steps, id: \.self) { step in
+                                        HStack {
+                                            Image(systemName: "circle.fill")
+                                                .resizable()
+                                                .frame(width: 10, height: 10)
+                                                .foregroundColor(.orange)
+                                                .padding(.trailing, 5)
+                                            
+                                            Text(step)
+                                                .lineLimit(nil) // Permet au texte de se développer et d'être complètement visible
+                                            
+                                            
+                                        }
+                                        
+                                    }
                                 }
-                                HStack(alignment: .center, spacing: 2) {
-                                    Image(systemName: "thermometer.high")
-                                    Text("\(recipe.degrees)°")
-                                }
-                            }
+                            }.fixedSize(horizontal: false, vertical: true) // Permet au texte de se développer verticalement
+                            
+                            Spacer()
+                            
+                            
                         }
                     }
-                    Text("Ingredients")
-                        .font(.title3).bold().foregroundColor(.brown)
-                    
-                    VStack(alignment: .leading) {
-                        LazyHStack(spacing: 10) {
-                            ForEach(Array(recipe.ingredients.enumerated()), id: \.element) { index, ingredient in
-                                Badge(text: ingredient, backgroundColor: Color("CoffeeGreen"), textColor: .white)
-                            }
-                        }
-                    }
-                    Spacer()
-                    // STEPS
-                    Text("Instructions")
-                        .font(.title3).bold().foregroundColor(.brown)
-                    ForEach(recipe.steps, id: \.self) { step in
-                        VStack(alignment: .center, spacing: 5) {
-                            Image(systemName: "chevron.down.circle")
-                                .resizable()
-                                .frame(width: 36, height: 36, alignment: .center)
-                                .imageScale(.large)
-                                .font(Font.title.weight(.ultraLight))
-                                .foregroundColor(.orange)
-                            Text(step)
-                                .lineLimit(nil)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(.brown)
-                                .frame(minHeight: 100)
-                        }
-                    }
-                }
-                .padding(.horizontal, 24)
-                .padding(.vertical, 12)
+                   
+                }.padding(.horizontal, 20)
+                .background(Color("CoffeeWhite"))
+                .clipShape(Corners())
+
+                Spacer()
             }
-        }.ignoresSafeArea(.container, edges: .top)
+            .edgesIgnoringSafeArea(.top)
+            
+        }
+
+    }
+}
+
+struct TitleModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .font(.system(.title, design: .rounded))
+            .foregroundColor(Color("CoffeeGreen"))
+            .padding(8)
+    }
+}
+
+struct Corners: Shape {
+    func path(in rect: CGRect) -> Path {
+        let path = UIBezierPath(roundedRect: rect, byRoundingCorners: [.topLeft, .topRight], cornerRadii: CGSize(width: 35, height: 35))
+        
+        return Path(path.cgPath)
     }
 }
 

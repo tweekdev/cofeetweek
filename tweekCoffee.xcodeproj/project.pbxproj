@@ -18,6 +18,7 @@
 		40CEADC72A97984A00C8E31B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40CEADC62A97984A00C8E31B /* Assets.xcassets */; };
 		40CEADCA2A97984A00C8E31B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40CEADC92A97984A00C8E31B /* Preview Assets.xcassets */; };
 		40CEADD52A979D2200C8E31B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CEADD42A979D2200C8E31B /* HomeView.swift */; };
+		CC6B520E2ABC6ACD00F1E05F /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6B520D2ABC6ACD00F1E05F /* SearchBar.swift */; };
 		CC7FB58D2AB2F5E800F78B53 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7FB58C2AB2F5E800F78B53 /* SettingsView.swift */; };
 		CC7FB58F2AB2F61B00F78B53 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7FB58E2AB2F61B00F78B53 /* TabBar.swift */; };
 		CC7FB5912AB2F99200F78B53 /* NewRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7FB5902AB2F99200F78B53 /* NewRecipeView.swift */; };
@@ -29,6 +30,7 @@
 		CC7FB59F2AB31D8400F78B53 /* CoffeeMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7FB59E2AB31D8400F78B53 /* CoffeeMachine.swift */; };
 		CC7FB5A12AB31FBE00F78B53 /* CoffeeMachineCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7FB5A02AB31FBE00F78B53 /* CoffeeMachineCard.swift */; };
 		CC7FB5A52AB439EF00F78B53 /* CoffeeRatioCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7FB5A42AB439EF00F78B53 /* CoffeeRatioCalculatorView.swift */; };
+		CC7FB5A72AB4550E00F78B53 /* RecipeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7FB5A62AB4550E00F78B53 /* RecipeRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,7 @@
 		40CEADC62A97984A00C8E31B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40CEADC92A97984A00C8E31B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		40CEADD42A979D2200C8E31B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		CC6B520D2ABC6ACD00F1E05F /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		CC7FB58C2AB2F5E800F78B53 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		CC7FB58E2AB2F61B00F78B53 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		CC7FB5902AB2F99200F78B53 /* NewRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRecipeView.swift; sourceTree = "<group>"; };
@@ -55,6 +58,7 @@
 		CC7FB59E2AB31D8400F78B53 /* CoffeeMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeMachine.swift; sourceTree = "<group>"; };
 		CC7FB5A02AB31FBE00F78B53 /* CoffeeMachineCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeMachineCard.swift; sourceTree = "<group>"; };
 		CC7FB5A42AB439EF00F78B53 /* CoffeeRatioCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeRatioCalculatorView.swift; sourceTree = "<group>"; };
+		CC7FB5A62AB4550E00F78B53 /* RecipeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +145,8 @@
 				CC7FB5972AB3074000F78B53 /* RecipeList.swift */,
 				401E24452AB0930300EED717 /* CoffeeMachineList.swift */,
 				CC7FB59C2AB312D200F78B53 /* Badge.swift */,
+				CC7FB5A62AB4550E00F78B53 /* RecipeRow.swift */,
+				CC6B520D2ABC6ACD00F1E05F /* SearchBar.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -232,6 +238,7 @@
 				40CEADC32A97984900C8E31B /* tweekCoffeeApp.swift in Sources */,
 				40CEADD52A979D2200C8E31B /* HomeView.swift in Sources */,
 				CC7FB5932AB2F9E600F78B53 /* CategoriesView.swift in Sources */,
+				CC6B520E2ABC6ACD00F1E05F /* SearchBar.swift in Sources */,
 				401E243C2AB06CEB00EED717 /* CoffeeRecipeDetail.swift in Sources */,
 				CC7FB58F2AB2F61B00F78B53 /* TabBar.swift in Sources */,
 				CC7FB5A52AB439EF00F78B53 /* CoffeeRatioCalculatorView.swift in Sources */,
@@ -243,6 +250,7 @@
 				401E24442AB092C400EED717 /* CoffeeRecipeList.swift in Sources */,
 				CC7FB5A12AB31FBE00F78B53 /* CoffeeMachineCard.swift in Sources */,
 				CC7FB5982AB3074000F78B53 /* RecipeList.swift in Sources */,
+				CC7FB5A72AB4550E00F78B53 /* RecipeRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +386,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -406,6 +415,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
